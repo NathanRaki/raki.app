@@ -1,11 +1,11 @@
 import '../css/App.css';
+import React from "react";
+import Greetings from "./Greetings";
+
 
 function App() {
-    const name = "Raki";
     return (
-        <div className="App">
-            Hello {name}.
-        </div>
+        <Greetings />
     );
 }
 
