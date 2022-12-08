@@ -5,10 +5,25 @@ import Note from "./Note";
 import "../css/KeeperApp.css";
 
 function KeeperApp() {
+    const [notes, setNotes] = React.useState([]);
+
+    React.useEffect(() => {
+        fetch("/api")
+            .then(res => res.json())
+            .then(data => setNotes(data));
+    }, []);
+
+    const noteElements = notes.map((note, index) => (
+        <Note key={note.title} title={note.title} content={note.content} />
+    ));
+
     return (
         <div className="KeeperApp">
             <Header />
-            <Note title="This is the note title" content="This is the note content" />
+            {(noteElements.length === 0)
+                ? (<p>Loading...</p>)
+                : noteElements
+            }
             <Footer />
         </div>
     );
