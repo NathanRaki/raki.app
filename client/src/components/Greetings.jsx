@@ -1,5 +1,5 @@
-import "../css/Greetings.css"
 import React from "react";
+import "../css/Greetings.css"
 
 const morningStyle = { color: "red" };
 const afternoonStyle = { color: "green" };
