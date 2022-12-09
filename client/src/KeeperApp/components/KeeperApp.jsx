@@ -13,15 +13,15 @@ function KeeperApp() {
             .then(data => setNotes(data));
     }, []);
 
-    const noteElements = notes.map((note, index) => (
+    const noteElements = notes.map(note =>
         <Note key={note.title} title={note.title} content={note.content} />
-    ));
+    );
 
     return (
         <div className="KeeperApp">
             <Header />
-            {(noteElements.length === 0)
-                ? (<p>Loading...</p>)
+            {(noteElements.length === 0) ?
+                <p>Loading...</p>
                 : noteElements
             }
             <Footer />

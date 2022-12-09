@@ -4,7 +4,7 @@ import "../css/Header.css";
 function Header() {
     return (
         <header>
-            <h1>Keeper</h1>
+            <h1>Raki's Notes</h1>
         </header>
     );
 }
