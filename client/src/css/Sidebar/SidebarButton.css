@@ -1,0 +1,19 @@
+.sidebarButton {
+    margin: 10px 0;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #bbb;
+    line-height: 2;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+.sidebarButton .row {
+    margin: auto;
+}

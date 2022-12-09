@@ -20,10 +20,7 @@ function KeeperApp() {
     return (
         <div className="KeeperApp">
             <Header />
-            {(noteElements.length === 0) ?
-                <p>Loading...</p>
-                : noteElements
-            }
+            {(noteElements.length === 0) ? <p>Loading...</p> : noteElements}
             <Footer />
         </div>
     );

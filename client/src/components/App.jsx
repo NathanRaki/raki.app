@@ -1,12 +1,27 @@
 import React from "react";
-import Greetings from "./Greetings";
-import KeeperApp from "../KeeperApp/components/KeeperApp";
 import '../css/App.css';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Navigate
+} from "react-router-dom";
+import Root from "./Root";
 
-function App() {
+export default function App() {
+    const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Root />
+        },
+        {
+            path: "/minecraft",
+            element: <Root />
+        }
+    ]);
+
     return (
-        <Greetings />
+        <RouterProvider router={router} />
     );
 }
-
-export default App;
