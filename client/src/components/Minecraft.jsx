@@ -22,6 +22,6 @@ export default function Minecraft() {
     return status ? (
         status === 200 ? (
             content
-        ) : <div>Unauthorized access.</div>
+        ) : <Container>Unauthorized access.</Container>
     ) : null;
 }
