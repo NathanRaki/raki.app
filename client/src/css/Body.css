@@ -12,8 +12,15 @@
 
 .bodyContent {
     color: #fff;
+    padding: 30px 0;
     margin-left: 50px;
     background-color: #27293d;
+}
+
+@media (max-width: 1200px) {
+    .bodyContent {
+        margin-left: 0;
+    }
 }
 
 .sidebarCol {

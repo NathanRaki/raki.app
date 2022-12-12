@@ -1,1 +1,1 @@
-# raki.app
+# raki.server

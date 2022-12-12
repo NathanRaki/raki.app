@@ -4,3 +4,54 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
+
+.form-register, .form-login {
+    min-width: 300px;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-group {
+    margin: 20px 0;
+    position: relative;
+}
+
+.profile-img-card {
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+}
+
+.body {
+    padding: 110px 0 5%;
+    height: 100vh;
+    background: linear-gradient(#1e1e2f,#1e1e24);
+}
+
+.section {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    padding: 10px;
+}
+
+.bodyContent {
+    color: #fff;
+    margin-left: 50px;
+    background-color: #27293d;
+}
+
+@media (max-width: 1200px) {
+    .bodyContent {
+        margin-left: 0;
+    }
+}
+
+.sidebarCol {
+    background: linear-gradient(0deg,#3358f4,#1d8cf8);
+}

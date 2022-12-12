@@ -2,12 +2,14 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "../../css//Sidebar/SidebarButton.css";
 import {Col, Row} from "react-bootstrap";
+import {withRouter} from "../../common/with-router";
 
 const activeStyle = {
     color: "#fff"
 };
 
-export default function SidebarButton(props) {
+function SidebarButton(props) {
+    const path = props.router.location.pathname;
     return (
         <div className="sidebarButton">
             <Row>
@@ -17,7 +19,8 @@ export default function SidebarButton(props) {
                 <Col>
                     <Link
                         to={props.to}
-                        style={props.path === props.to ? activeStyle : null}>
+                        style={path === props.to ? activeStyle : null}
+                        onClick={props.cb}>
                         {props.text}
                     </Link>
                 </Col>
@@ -25,3 +28,4 @@ export default function SidebarButton(props) {
         </div>
     );
 }
+export default withRouter(SidebarButton);

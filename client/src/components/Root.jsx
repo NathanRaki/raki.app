@@ -8,7 +8,7 @@ export default function Root() {
     const location = useLocation();
     return(
         <div>
-            <Header />
+            <Header path={location.pathname}/>
             <Body path={location.pathname}/>
         </div>
     );
