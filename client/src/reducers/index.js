@@ -5,7 +5,7 @@ import AuthService from "../services/auth.service";
 const user = AuthService.getCurrentUser();
 const initialUserState = {
     currentUser: user ? user : null,
-    isLoading: true
+    isLoading: !user
 };
 
 const user_reducer = (state = initialUserState, action) => {
